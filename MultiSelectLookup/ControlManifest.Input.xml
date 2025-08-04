@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="ktcs" constructor="MultiSelectLookup" version="0.0.2" display-name-key="MultiSelectLookup" description-key="MultiSelectLookup description" control-type="virtual" >
+  <control namespace="IArgusMultiSelectLookup" constructor="MultiSelectLookup" version="0.0.2" display-name-key="MultiSelectLookup" description-key="MultiSelectLookup description" control-type="virtual" >
     <external-service-usage enabled="false">
     </external-service-usage>
     <data-set name="dataset" display-name-key="dataset">
@@ -24,6 +24,7 @@
       <value name="Any Words" display-name-key="No">1</value>
     </property>
     <property name="bestEffort" display-name-key="Enable Best Effort Search" description-key="(optional, only applies when Advanced Search Mode is enabled) When True, allows Dataverse to return probable results when no good results are found otherwise" of-type="TwoOptions" usage="input" required="true" />
+
     <resources>
       <code path="index.ts" order="1"/>
       <platform-library name="React" version="16.8.6" />
